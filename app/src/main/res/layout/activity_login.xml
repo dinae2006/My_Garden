@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Garden"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        style="@style/EditText_Style"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:hint="Enter username"
+        android:id="@+id/username_ET"
+        />
+    <EditText
+        style="@style/EditText_Style"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:id="@+id/password_ET"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="20dp"
+        android:text="Login"
+        android:id="@+id/Login_Btn"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="Create Account"
+        android:layout_gravity="left"
+        android:id="@+id/CreateAccount_TV"
+        />
+
+
+
+</LinearLayout>

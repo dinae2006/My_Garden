@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CreateAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            style="@style/EditText_Style"
+            android:id="@+id/first_nameET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/white"
+            android:hint="First Name"
+            android:textSize="25sp"/>
+        <EditText
+            style="@style/EditText_Style"
+            android:id="@+id/last_nameET"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/white"
+            android:hint="Last Name"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        style="@style/EditText_Style"
+        android:id="@+id/user_nameET"
+        android:hint="User Name"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/emailET"
+        style="@style/EditText_Style"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="Email"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/passwordET"
+        style="@style/EditText_Style"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="italic"
+        android:textSize="30sp"/>
+
+</LinearLayout>
